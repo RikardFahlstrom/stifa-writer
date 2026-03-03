@@ -52,10 +52,17 @@ a:hover {
   align-items: center;
   justify-content: center;
   padding: 2rem 1rem;
+  background-image: url('/bg.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .card {
-  background: var(--white);
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.45);
   border-radius: var(--radius);
   box-shadow: var(--shadow-md);
   padding: 2.5rem 2rem;
@@ -383,9 +390,11 @@ a:hover {
 .footer {
   text-align: center;
   padding: 1.25rem 1rem;
-  font-size: .78rem;
-  color: var(--grey-400);
+  font-size: .85rem;
+  color: var(--white);
+  text-shadow: 0 1px 4px rgba(0,0,0,.55);
 }
+.footer a { color: var(--white); }
 
 /* ── Status / loading states ──────────────────────────────────────────────── */
 .loading-state {
